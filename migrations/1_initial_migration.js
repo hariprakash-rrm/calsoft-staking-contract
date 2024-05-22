@@ -1,6 +1,6 @@
 const { deployProxy, upgradeProxy } = require('@openzeppelin/truffle-upgrades');
-const BXStaking = artifacts.require("BXStaking");
+const CalsoftStaking = artifacts.require("CalsoftStaking");
 
 module.exports = async function (deployer) {
-  await deployProxy(BXStaking,{ deployer, kind: "uups" });
+  await deployProxy(CalsoftStaking,{ deployer, kind: "uups" });
 };
