@@ -226,10 +226,10 @@ contract CalsoftStaking is
             _rewardRate > 0,
             "Add Pool : Reward Rate(APR) in % Must be greater than 0"
         );
-        require(
-            !hasPoolExist[_depositToken][_rewardToken],
-            "Add Pool: Pair already created"
-        );
+        // require(
+        //     !hasPoolExist[_depositToken][_rewardToken],
+        //     "Add Pool: Pair already created"
+        // );
     }     /**
    * @dev Override to extend the way in which ether is converted to tokens.
    * @param _weiAmount Value in wei to be converted into tokens

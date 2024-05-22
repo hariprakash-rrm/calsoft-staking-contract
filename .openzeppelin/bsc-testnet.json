@@ -214,6 +214,213 @@
         },
         "namespaces": {}
       }
+    },
+    "92e26341d5dc3b0bdc10a9beb4d8eb9706ce6a68564701fcb539735765a569bd": {
+      "address": "0xaf6f0733FFc02aB7EE20E75981754f8bf9d719da",
+      "txHash": "0x4ad76a4a49df73c24d1da4bb0c6a21ffe2eb22ba49da81f6246c55ea3acd909b",
+      "layout": {
+        "solcVersion": "0.8.16",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:40"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "contract": "CalsoftStaking",
+            "label": "totalDepositAmountInPool",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "../project:/contracts/CalsoftStaking.sol:30"
+          },
+          {
+            "contract": "CalsoftStaking",
+            "label": "poolInfo",
+            "type": "t_array(t_struct(PoolInfo)2104_storage)dyn_storage",
+            "src": "../project:/contracts/CalsoftStaking.sol:32"
+          },
+          {
+            "contract": "CalsoftStaking",
+            "label": "userInfo",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)2089_storage))",
+            "src": "../project:/contracts/CalsoftStaking.sol:34"
+          },
+          {
+            "contract": "CalsoftStaking",
+            "label": "hasPoolExist",
+            "type": "t_mapping(t_contract(IERC20Upgradeable)1095,t_mapping(t_contract(IERC20Upgradeable)1095,t_bool))",
+            "src": "../project:/contracts/CalsoftStaking.sol:36"
+          },
+          {
+            "contract": "CalsoftStaking",
+            "label": "rewardsEarned",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/CalsoftStaking.sol:38"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_struct(PoolInfo)2104_storage)dyn_storage": {
+            "label": "struct CalsoftStaking.PoolInfo[]"
+          },
+          "t_struct(PoolInfo)2104_storage": {
+            "label": "struct CalsoftStaking.PoolInfo",
+            "members": [
+              {
+                "label": "depositToken",
+                "type": "t_contract(IERC20MetadataUpgradeable)1120"
+              },
+              {
+                "label": "rewardToken",
+                "type": "t_contract(IERC20MetadataUpgradeable)1120"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardInterval",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardRate",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_contract(IERC20MetadataUpgradeable)1120": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)2089_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct CalsoftStaking.UserInfo))"
+          },
+          "t_mapping(t_address,t_struct(UserInfo)2089_storage)": {
+            "label": "mapping(address => struct CalsoftStaking.UserInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(UserInfo)2089_storage": {
+            "label": "struct CalsoftStaking.UserInfo",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositStartTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "hasDeposited",
+                "type": "t_bool"
+              },
+              {
+                "label": "isDeposited",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_contract(IERC20Upgradeable)1095,t_mapping(t_contract(IERC20Upgradeable)1095,t_bool))": {
+            "label": "mapping(contract IERC20Upgradeable => mapping(contract IERC20Upgradeable => bool))"
+          },
+          "t_contract(IERC20Upgradeable)1095": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_mapping(t_contract(IERC20Upgradeable)1095,t_bool)": {
+            "label": "mapping(contract IERC20Upgradeable => bool)"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        },
+        "namespaces": {}
+      }
     }
   }
 }
