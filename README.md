@@ -1,1 +1,1 @@
-# calsoft-staking-contract
+# cs - staking
